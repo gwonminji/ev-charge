@@ -1,8 +1,15 @@
 //Break Point
-$min-desktop: 1280px;
+$min-desktop: 1024px;
 $tablet: 1023px;
 $mobile: 767px;
-$desktop-container: 1280px;
+$desktop-container: 1024px;
 $mobile-container: 100%;
 
+$header-height: 60px;
+$footer-height: 60px;
 $mobileInnerHeight: calc(var(--vh, 1vh) * 100);
+
+$color-blue: #146ebe;
+$color-lightgray: #f0f1f3;
+$color-darkgray: #183153;
+$color-white: #fff;

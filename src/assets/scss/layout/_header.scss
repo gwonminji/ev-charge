@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $header-height;
+    background: $color-white;
+    &__logo{
+        color: $color-blue;
+        svg{
+            width: 18px;
+            height: auto;
+        }
+    }
+}

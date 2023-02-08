@@ -6,13 +6,13 @@ const routes = [
     //path별 view 등록
     {
         path: '/',
-        name: "Login",
+        name: "login",
         // component: Login
         component: () => import('@/views/Login.vue'),
     },
     {
         path: '/main',
-        name: "Main",
+        name: "main",
         // component: Main
         component: () => import('@/views/Main.vue'),
     }
