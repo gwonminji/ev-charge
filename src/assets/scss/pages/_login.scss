@@ -1,0 +1,85 @@
+.login-form{
+    display: flex;
+    background: $color-white;
+    &__welcome{
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 40px;
+            span{
+                position: relative;
+                &::before{
+                    content: "";
+                    width: 100%;
+                    height: 22px;
+                    background: yellow;
+                    display: block;
+                    position: absolute;
+                    bottom: 14px;
+                    z-index: 1;
+                    opacity: 0.45;
+                    transform: skew(-2deg, -2deg);
+                }
+            }
+            svg{
+                animation: tilt-shaking 1s infinite;
+            }
+        }
+    }
+    &__group{
+        padding: 60px;
+        width: 55%;
+        h2{
+            margin: 0 0 40px 0;
+            font-size: 30px;
+            color: $color-blue;
+            text-align: center;
+        }
+    }
+    &__btn{
+        &--login{
+            margin: 40px 0 0 0;
+            display: block;
+            width: 100%;
+            height: 52px;
+            line-height: 52px;
+            background: $color-blue;
+            font-size: 24px;
+            color: #fff;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+}
+.form-box{
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    &__label{
+        margin: 0 0 6px 0;
+        font-size: 20px;
+        color: #333;
+        font-weight: 500;
+    }
+    &__input{
+        padding: 0 0 0 12px;
+        width: 100%;
+        height: 46px;
+        line-height: 46px;
+        font-size: 18px;
+        color: #333;
+        font-weight: 500;
+        border: 1px solid #f9f9f9;
+        background: #f9f9f9;
+    }
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
