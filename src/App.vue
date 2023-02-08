@@ -53,16 +53,16 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: $min-desktop;
+  max-width: $desktop-container;
   height: 100vh;
   margin: 0 auto;
   background: $color-lightgray;
   border-left: 1px solid $color-lightgray;
   border-right: 1px solid $color-lightgray;
 }
-.view{
-  height: calc(100vh - #{$header-height} - #{$footer-height});
-}
+// .view{
+//   height: calc(100vh - #{$header-height} - #{$footer-height});
+// }
 .inner{
   width: 100%;
   padding: 0 20px;

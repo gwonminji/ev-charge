@@ -1,0 +1,62 @@
+.gnb{
+    position: fixed;
+    left: calc(50vw + (#{$desktop-container} / 2) - 60px);
+    bottom: calc(#{$footer-height} + 10px);
+    &--expand{
+        .gnb-list{
+            height: auto;
+            bottom: calc(#{$footer-height} + 10px + 50px);
+            overflow: visible;
+            &__item{
+                position: relative;
+            }
+        }
+    }
+    &__btn{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background: $color-blue;
+        border-radius: 100%;
+        z-index: 1;
+        svg{
+            width: 30px;
+            height: 30px;
+            path[fill]{
+                color: $color-white;
+            }
+        }
+    }
+}
+.gnb-list{
+    position: fixed;
+    height: 50px;
+    bottom: calc(#{$footer-height} + 10px);
+    overflow: hidden;
+    transition: 0.25s ease;
+    &__item{
+        margin: 0 0 16px 0;
+    }
+    &__link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background: $color-white;
+        border-radius: 100%;
+        &:hover{
+            background: #fafafa;
+        }
+        svg{
+            width: 20px;
+            height: 20px;
+            path[fill]{
+                color: $color-blue;
+            }
+        }
+    }
+}

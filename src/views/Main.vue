@@ -1,5 +1,21 @@
 <template>
     <main>
-        <div class="inner">메인뷰</div>
+        <div class="inner">
+
+        </div>
+        <Menu />
     </main>
 </template>
+<script>
+import Menu from '@/components/Menu.vue'
+export default {
+    components:{
+        Menu
+    },
+    setup() {
+        return{
+
+        }
+    },
+}
+</script>
