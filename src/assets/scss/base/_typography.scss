@@ -19,3 +19,8 @@ typography
 @include font-face("Pretendard", "~@/assets/fonts/Pretendard-Bold", 700, normal);
 @include font-face("Pretendard", "~@/assets/fonts/Pretendard-ExtraBold", 800, normal);
 @include font-face("Pretendard", "~@/assets/fonts/Pretendard-Black", 900, normal);
+
+html,
+body{
+    font-family: "Pretendard", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}

@@ -1,12 +1,19 @@
 <template>
-  <HelloWorld />
+  <div>
+    <Header />
+    <router-view />
+    <Footer />
+  </div>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld'
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
+
 export default {
   components:{
-    HelloWorld
+    Header,
+    Footer
   },
   setup() {
     return{
@@ -16,7 +23,5 @@ export default {
 }
 </script>
 <style lang="scss">
-@import '@/assets/scss/base/reset';
-@import '@/assets/scss/base/typography';
 @import '@/assets/scss/style';
 </style>

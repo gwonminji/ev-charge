@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h1>h1</h1>
-    <p>텍스트</p>
+    헤더
   </div>
 </template>
 
