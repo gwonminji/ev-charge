@@ -1,7 +1,7 @@
 <template>
-  <div class="wrap">
+  <div class="container">
     <Header />
-    <router-view :class="curClassName + '-page'"/>
+    <router-view class="main" :class="curClassName + '-page'"/>
     <Footer />
   </div>
 </template>
@@ -49,20 +49,16 @@ export default {
 </script>
 <style lang="scss">
 @import '@/assets/scss/style';
-.wrap{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.container{
   max-width: $desktop-container;
-  height: 100vh;
   margin: 0 auto;
   background: $color-lightgray;
   border-left: 1px solid $color-lightgray;
   border-right: 1px solid $color-lightgray;
 }
-// .view{
-//   height: calc(100vh - #{$header-height} - #{$footer-height});
-// }
+.main{
+  min-height: calc(100vh - #{$header-height} - #{$footer-height});
+}
 .inner{
   width: 100%;
   padding: 0 20px;

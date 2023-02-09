@@ -1,11 +1,12 @@
 .gnb{
     position: fixed;
-    left: calc(50vw + (#{$desktop-container} / 2) - 60px);
+    width: 100%;
+    max-width: $desktop-container;
     bottom: calc(#{$footer-height} + 10px);
     &--expand{
         .gnb-list{
             height: auto;
-            bottom: calc(#{$footer-height} + 10px + 50px);
+            bottom: 50px;
             overflow: visible;
             &__item{
                 position: relative;
@@ -13,6 +14,7 @@
         }
     }
     &__btn{
+        margin: 0 10px 0 auto;
         position: relative;
         display: flex;
         justify-content: center;
@@ -21,6 +23,7 @@
         height: 50px;
         background: $color-blue;
         border-radius: 100%;
+        box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
         z-index: 1;
         svg{
             width: 30px;
@@ -32,9 +35,10 @@
     }
 }
 .gnb-list{
-    position: fixed;
+    position: absolute;
     height: 50px;
-    bottom: calc(#{$footer-height} + 10px);
+    right: 10px;
+    bottom: 0;
     overflow: hidden;
     transition: 0.25s ease;
     &__item{
@@ -48,6 +52,7 @@
         height: 50px;
         background: $color-white;
         border-radius: 100%;
+        box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
         &:hover{
             background: #fafafa;
         }

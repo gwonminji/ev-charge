@@ -19,6 +19,11 @@
                     <font-awesome-icon icon="fa-solid fa-star" />
                 </a>
             </li>
+            <li class="gnb-list__item">
+                <a href="/main" class="gnb-list__link" title="로그아웃">
+                    <font-awesome-icon icon="fa-solid fa-right-from-bracket" />
+                </a>
+            </li>
         </ul>
     </div>
 </template>
