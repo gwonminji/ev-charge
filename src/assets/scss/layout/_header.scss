@@ -6,6 +6,7 @@
     align-items: center;
     height: $header-height;
     background: $color-white;
+    z-index: 100;
     &__logo{
         color: $color-blue;
         svg{

@@ -20,7 +20,6 @@ export default {
   setup() {
     const route = useRoute()
     const router = useRouter()
-    // let curPage = ref('');
 
     let routeName = ref('');
 
@@ -30,11 +29,9 @@ export default {
       console.log('route name : ', route.name)
     })
 
-
     const curClassName = computed(() => {
-      // console.log('computed route name : ', route.name)
       routeName = route.name;
-      console.log('computed route name : ', route.name)
+      // console.log('computed route name : ', route.name)
 
       return routeName;
     })

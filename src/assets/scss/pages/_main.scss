@@ -1,9 +1,61 @@
 .main-page{
-    
+    padding: 0 0 $footer-height 0 ;
 }
-.total{
+.list{
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    &--more{
+        display: block;
+        margin: 0;
+        .list{
+            &__item{
+                padding: 0;
+            }
+            &__btn{
+                margin: 0 0 0 4px;
+                svg{
+                    color: #ddd;
+                }
+            }
+        }
+    }
     &__item{
-        margin: 20px 0;
-        background: $color-white;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__val{
+        position: relative;
+        padding: 0 0 0 30px;
+        color: #333;
+        font-size: 20px;
+        &:not(:first-child){
+            margin: 12px 0 0 0;
+        }
+    }
+    &__ico{
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: inline-block;
+        width: 20px;
+        margin: 0 10px 0 0;
+        svg{
+            path{
+                fill: $color-blue;
+            }
+        }
+    }
+    &__btn{
+        margin: 0 0 0 auto;
+        svg{
+            color: $color-blue;
+            font-size: 20px;
+        }
     }
 }

@@ -1,0 +1,38 @@
+.modal{
+    position: fixed;
+    top: $header-height;
+    bottom: $header-height;
+    width: 100%;
+    max-width: $desktop-container;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    &--sm{
+        .modal-content{
+            width: 500px;
+            // height: 250px;
+        }
+    }
+    &-content{
+        background: $color-white;
+        border-radius: 10px;
+    }
+    &-close{
+        position: absolute;
+        right: 20px;
+        top: 14px;
+        svg{
+            font-size: 20px;
+        }
+    }
+    &__header{
+        position: relative;
+        height: 50px;
+        padding: 0 20px;
+    }
+    &__body{
+        padding: 20px;
+    }
+}

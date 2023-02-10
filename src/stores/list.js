@@ -13,17 +13,18 @@ export const useListStore = defineStore('list', {
         //     axios.get('https://cors-anywhere.herokuapp.com/https://bigdata.kepco.co.kr/openapi/v1/EVcharge.do?metroCd=all&apiKey=51h3g3RtSbC236TmM2s7B5D5de0Bj50xFGP1c8f6&returnType=json');
         // }
         fetchList(){
-            axios.get('https://cors-anywhere.herokuapp.com/https://bigdata.kepco.co.kr/openapi/v1/EVcharge.do?metroCd=all&apiKey=51h3g3RtSbC236TmM2s7B5D5de0Bj50xFGP1c8f6&returnType=json')
+            axios.get('https://cors-anywhere.herokuapp.com/https://bigdata.kepco.co.kr/openapi/v1/EVcharge.do?metroCd=41&apiKey=51h3g3RtSbC236TmM2s7B5D5de0Bj50xFGP1c8f6&returnType=json')
+            // axios.get('./data/list.json')
                 .then(res => {
-                    this.list = JSON.stringify(res.data);
-                    // this.isLoading = true;
+                    this.list = res.data.data;
                     if(this.list.length > 0){
                         this.isLoading = true;
                     }
-                    console.log('응답 : ', this.list);
+                    console.log('response data : ', this.list);
                 })
                 .catch(error => {
-                    console.log('에러 : ', error.data);
+                    console.log('error : ', error.data);
+                    alert('데이터 불러오기 실패');
                 });            
         }
         // async fetchList(){

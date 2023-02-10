@@ -12,11 +12,11 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faBolt, faHand, faBars, faHouse, faMagnifyingGlass, faStar, faRightFromBracket } from '@fortawesome/free-solid-svg-icons'
+import { faBolt, faHand, faBars, faHouse, faMagnifyingGlass, faStar, faRightFromBracket, faLocationDot, faMap, faGasPump, faCar, faCircleInfo, faXmark, faCopy } from '@fortawesome/free-solid-svg-icons'
 import { faFaceSmile } from '@fortawesome/free-regular-svg-icons'
 
 /* add icons to the library */
-library.add(faTwitter, faBolt, faFaceSmile, faHand, faBars, faHouse, faMagnifyingGlass, faStar, faRightFromBracket)
+library.add(faTwitter, faBolt, faFaceSmile, faHand, faBars, faHouse, faMagnifyingGlass, faStar, faRightFromBracket, faLocationDot, faMap, faGasPump, faCar, faCircleInfo, faXmark, faCopy)
 
 // const app = createApp(App).use(router).use(createPinia()).component('font-awesome-icon', FontAwesomeIcon);
 const app = createApp(App)
